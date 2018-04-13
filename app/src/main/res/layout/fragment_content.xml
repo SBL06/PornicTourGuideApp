@@ -1,0 +1,68 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="androidbasicsnanodegree.sbl.pornictourguideapp.ContentFragment">
+
+
+<LinearLayout
+    android:id="@+id/audioDescriptionButton"
+    android:layout_height="0dp"
+    android:layout_width="0dp"
+    android:layout_marginEnd="@dimen/doubleMargin"
+    android:layout_marginStart="@dimen/doubleMargin"
+    android:layout_marginTop="@dimen/doubleMargin"
+    android:background="?android:selectableItemBackground"
+    android:orientation="horizontal"
+    app:layout_constraintDimensionRatio="16:2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_marginBottom="@dimen/standardMargin"
+    android:layout_marginStart="@dimen/standardMargin"
+    android:layout_marginTop="@dimen/standardMargin"
+    android:src="@drawable/ic_play_circle_outline_black_36dp"
+    app:layout_constraintBottom_toBottomOf="@+id/audioDescriptionButton"
+    app:layout_constraintDimensionRatio="h,1:1"
+    app:layout_constraintStart_toStartOf="@+id/audioDescriptionButton"
+    app:layout_constraintTop_toTopOf="@+id/audioDescriptionButton" />
+
+<TextView
+    android:id="@+id/audioDescriptionText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/standardMargin"
+    android:layout_marginEnd="@dimen/standardMargin"
+    android:layout_marginStart="@dimen/standardMargin"
+    android:layout_marginTop="@dimen/standardMargin"
+    android:text="@string/audioDescription"
+    app:layout_constraintBottom_toBottomOf="@+id/audioDescriptionButton"
+    app:layout_constraintEnd_toEndOf="@+id/audioDescriptionButton"
+    app:layout_constraintStart_toEndOf="@+id/imageView"
+    app:layout_constraintTop_toTopOf="@+id/audioDescriptionButton" />
+
+<TextView
+    android:id="@+id/contentText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/doubleMargin"
+
+    app:layout_constraintEnd_toEndOf="@+id/audioDescriptionButton"
+    app:layout_constraintStart_toStartOf="@+id/audioDescriptionButton"
+    app:layout_constraintTop_toBottomOf="@+id/audioDescriptionButton" />
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/doubleMargin"
+    android:text="@string/backToTour"
+    app:layout_constraintStart_toStartOf="@+id/contentText"
+    app:layout_constraintTop_toBottomOf="@+id/contentText" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="androidbasicsnanodegree.sbl.pornictourguideapp.LocationActivity">
+
+    <LinearLayout
+        android:id="@+id/locationBanner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintDimensionRatio="16:8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/locationActivityTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/doubleMargin"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:textColor="@color/locationActivityTitleTextColor"
+        android:textSize="@dimen/locationActivityTitleTextSize"
+        app:layout_constraintStart_toStartOf="@+id/locationBanner"
+        app:layout_constraintTop_toTopOf="@+id/locationActivityImage" />
+
+    <TextView
+        android:id="@+id/locationActivitySubtitle"
+        style="@style/locationActivitySubtitleTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/doubleMargin"
+        android:layout_marginStart="@dimen/doubleMargin"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:textColor="@color/locationActivitySubtitleTextColor"
+        android:textSize="@dimen/locationActivitySubtitleTextSize"
+        app:layout_constraintEnd_toStartOf="@+id/locationActivityImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationActivityTitle" />
+
+    <ImageView
+        android:id="@+id/locationActivityImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/doubleMargin"
+        android:layout_marginEnd="@dimen/doubleMargin"
+        android:layout_marginTop="@dimen/doubleMargin"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/locationTabLayout"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/locationBanner" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/locationTabLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationBanner"
+        app:tabMode="fixed"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/locationPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationTabLayout"/>
+
+</android.support.constraint.ConstraintLayout>

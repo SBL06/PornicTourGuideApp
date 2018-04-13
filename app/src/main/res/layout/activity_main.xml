@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="androidbasicsnanodegree.sbl.pornictourguideapp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topBarHeight"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchBackground"
+        android:layout_width="@dimen/noMargin"
+        android:layout_height="@dimen/searchBackgroundHeight"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/searchIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/noMargin"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/searchBackground"
+        app:layout_constraintStart_toStartOf="@+id/searchBackground"
+        app:layout_constraintTop_toTopOf="@+id/searchBackground"
+        app:srcCompat="@drawable/ic_search_black_36dp" />
+
+    <EditText
+        android:id="@+id/filter"
+        android:layout_width="@dimen/noMargin"
+        android:layout_height="@dimen/noMargin"
+        android:layout_marginEnd="@dimen/standardMargin"
+        android:layout_marginStart="@dimen/standardMargin"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:hint="@string/search_hint"
+        app:layout_constraintBottom_toBottomOf="@+id/searchBackground"
+        app:layout_constraintEnd_toEndOf="@+id/searchBackground"
+        app:layout_constraintStart_toEndOf="@+id/searchIcon"
+        app:layout_constraintTop_toTopOf="@+id/searchBackground" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:tabMode="scrollable"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/listPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"/>
+
+</android.support.constraint.ConstraintLayout>

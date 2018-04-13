@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Pornic Tour Guide App</string>
+
+    <!-- Strings used for the search interface -->
+    <string name="search_hint">Search location</string>
+
+    <!-- Strings used for Content Fragment -->
+    <string name="audioDescription">Audio Description</string>
+    <string name="backToTour">Back to Tour</string>
+
+    <!-- Tab titles -->
+    <string-array name="mainActivityTabTitles">
+        <item>Spots</item>
+        <item>Restaurants</item>
+        <item>Shops</item>
+        <item>Hotels</item>
+    </string-array>
+
+    <string-array name="locationActivityTabTitles">
+        <item>Description</item>
+        <item>Informations</item>
+    </string-array>
+
+    <!--Following strings should contain all the datas about locations except audio files-->
+
+    <!-- Harbour datas -->
+
+    <string name="harbourName">Pornic Harbour</string>
+    <string name="harbourOpeningDays">Open 24/7</string>
+    <integer name="harbourCategory">0</integer>
+    <drawable name="harbourImage">@drawable/harbour</drawable>
+    <string name="harbourDescription">A nice harbour with boats</string>
+    <string name="harbourInformations">Open daily and 24 hours a day,
+        however, it is recommended to visit it at daytime</string>
+
+    <!-- Castle datas -->
+
+    <string name="castleName">Pornic Castle</string>
+    <string name="castleOpeningDays">Open Tue-Fri, 8am-5pm </string>
+    <integer name="castleCategory">1</integer>
+    <drawable name="castleImage">@drawable/castle</drawable>
+    <string name="castleDescription">A nice castle with doors and windows</string>
+    <string name="castleInformations">Open from Tuesday to Friday and from 8am to 5pm
+    it is strongly recommended to book your tour in advance</string>
+
+</resources>

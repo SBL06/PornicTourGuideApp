@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimensions used for layouts -->
+    <dimen name="standardMargin">8dp</dimen>
+    <dimen name="doubleMargin">16dp</dimen>
+    <dimen name="noMargin">0dp</dimen>
+    <dimen name="topBarHeight">64dp</dimen>
+    <dimen name="searchBackgroundHeight">48dp</dimen>
+
+    <!-- Text sizes used in the app -->
+    <dimen name="locationTitleTextSize">16sp</dimen>
+    <dimen name="locationSubtitleTextSize">14sp</dimen>
+
+    <dimen name="locationActivityTitleTextSize">25sp</dimen>
+    <dimen  name="locationActivitySubtitleTextSize">14sp</dimen>
+
+</resources>
