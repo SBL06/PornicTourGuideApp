@@ -42,9 +42,9 @@ public class ContentAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
 
         if (position == 0) {
-            return ContentFragment.newInstance(description, audioId);
+            return ContentFragment.newInstance(description, audioId, true);
         } else {
-            return ContentFragment.newInstance(information, audioId);
+            return ContentFragment.newInstance(information, audioId, false);
         }
     }
 

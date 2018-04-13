@@ -11,13 +11,18 @@ import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
+import android.support.constraint.ConstraintSet;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class ContentFragment extends Fragment {
 
@@ -25,11 +30,13 @@ public class ContentFragment extends Fragment {
 
     private static final String CONTENT = "param1";
     private static final String AUDIO = "param2";
+    private static final String SHOWAUDIOBUTTON = "param3" ;
 
     // Following variables are related to the chosen location
 
     private String content;
     private int audioId;
+    boolean showAudioButton ;
 
     //Following objects are used for the audio playback
 
@@ -82,11 +89,12 @@ public class ContentFragment extends Fragment {
     // newInstance() method is defined in order for the fragment to accept and display
     // 2 parameters related to the chosen location
 
-    public static ContentFragment newInstance(String content, int audioId) {
+    public static ContentFragment newInstance(String content, int audioId, boolean showAudioButton) {
         ContentFragment fragment = new ContentFragment();
         Bundle args = new Bundle();
         args.putString(CONTENT, content);
         args.putInt(AUDIO, audioId);
+        args.putBoolean(SHOWAUDIOBUTTON, showAudioButton);
         fragment.setArguments(args);
         return fragment;
     }
@@ -99,6 +107,7 @@ public class ContentFragment extends Fragment {
         if (getArguments() != null) {
             content = getArguments().getString(CONTENT);
             audioId = getArguments().getInt(AUDIO);
+            showAudioButton = getArguments().getBoolean(SHOWAUDIOBUTTON) ;
         }
     }
 
@@ -135,6 +144,8 @@ public class ContentFragment extends Fragment {
 
         // Initialize and set the audio description button
         LinearLayout playAudioDescription = rootView.findViewById(R.id.audioDescriptionButton);
+
+        if (showAudioButton) {
         playAudioDescription.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -149,7 +160,17 @@ public class ContentFragment extends Fragment {
                 }
                 mediaPlayer.setOnCompletionListener(onCompletionListener);
             }
-        });
+        }); }
+        else {
+            ConstraintSet newSet = new ConstraintSet() ;
+            ConstraintLayout contentLayout = rootView.findViewById(R.id.contentConstraintLayout) ;
+            newSet.clone(contentLayout);
+            newSet.setVisibility(R.id.audioDescriptionButton, ConstraintSet.INVISIBLE);
+            newSet.setVisibility(R.id.audioDescriptionText, ConstraintSet.INVISIBLE);
+            newSet.setVisibility(R.id.imageView, ConstraintSet.INVISIBLE);
+            newSet.connect(R.id.contentText, ConstraintSet.TOP, R.id.contentConstraintLayout, ConstraintSet.TOP);
+            contentLayout.setConstraintSet(newSet);
+        }
         return rootView;
     }
 }
