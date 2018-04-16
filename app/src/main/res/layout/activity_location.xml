@@ -22,10 +22,12 @@
         android:id="@+id/locationActivityTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="@dimen/doubleMargin"
         android:layout_marginTop="@dimen/standardMargin"
         android:textColor="@color/locationActivityTitleTextColor"
         android:textSize="@dimen/locationActivityTitleTextSize"
+        app:layout_constraintEnd_toStartOf="@+id/locationActivityImage"
         app:layout_constraintStart_toStartOf="@+id/locationBanner"
         app:layout_constraintTop_toTopOf="@+id/locationActivityImage" />
 

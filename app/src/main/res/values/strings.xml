@@ -29,18 +29,190 @@
     <string name="harbourOpeningDays">Open 24/7</string>
     <integer name="harbourCategory">0</integer>
     <drawable name="harbourImage">@drawable/harbour</drawable>
-    <string name="harbourDescription">A nice harbour with boats</string>
-    <string name="harbourInformations">Open daily and 24 hours a day,
+    <string name="harbourDescription">A nice old marina</string>
+    <string name="harbourInformations">Quai Leray, 1 Rue du Môle, 44210 Pornic \n Open daily and 24 hours a day,
         however, it is recommended to visit it at daytime</string>
 
-    <!-- Castle datas -->
+    <!-- castle datas -->
 
     <string name="castleName">Pornic Castle</string>
-    <string name="castleOpeningDays">Open Tue-Fri, 8am-5pm </string>
-    <integer name="castleCategory">1</integer>
+    <string name="castleOpeningDays">Not open to the public </string>
+    <integer name="castleCategory">0</integer>
     <drawable name="castleImage">@drawable/castle</drawable>
-    <string name="castleDescription">A nice castle with doors and windows</string>
-    <string name="castleInformations">Open from Tuesday to Friday and from 8am to 5pm
+    <string name="castleDescription">Situated in the port of Pornic, the castle has long been a
+        symbol of the town. </string>
+    <string name="castleInformations">Place du Château, 44210 Pornic \n The castle is privately owned and not open to the public.</string>
+
+    <!-- faiencerie datas -->
+
+    <string name="faiencerieName">Faïencerie</string>
+    <string name="faiencerieOpeningDays">Open Tue-Fri, 8am-5pm </string>
+    <integer name="faiencerieCategory">0</integer>
+    <drawable name="faiencerieImage">@drawable/faiencerie</drawable>
+    <string name="faiencerieDescription">The faiencerie offers hand drawing bowls since 1947 in Pornic. 
+        It is a good place to discover this art and the history of the city. Perfect for a family tour, 
+        everybody can leave with his own named bowl ! </string>
+    <string name="faiencerieInformations">Rue de la Faïencerie, 44210 Pornic \n Open from Tuesday to Friday and from 8am to 5pm
     it is strongly recommended to book your tour in advance</string>
+
+    <!-- piverre datas -->
+
+    <string name="piverreName">PiVerre Workshop</string>
+    <string name="piverreOpeningDays">Open Tue-Sat, 8am-5pm </string>
+    <integer name="piverreCategory">0</integer>
+    <drawable name="piverreImage">@drawable/piverre</drawable>
+    <string name="piverreDescription">PiVerre workshop is the best place to discover the glass blower\'s 
+        knowledge. More of discover the history af this art, you could try it and leave with your creation ! </string>
+    <string name="piverreInformations">15 Bis Rue de la Haute Musse, 44770 La Plaine-sur-Mer \n
+        Open from Tuesday to Saturday and from 8am to 5pm</string>
+
+    <!-- aquacenter datas -->
+
+    <string name="aquacenterName">Aquacenter</string>
+    <string name="aquacenterOpeningDays">Open daily, 8am-9pm</string>
+    <integer name="aquacenterCategory">0</integer>
+    <drawable name="aquacenterImage">@drawable/aquacenter</drawable>
+    <string name="aquacenterDescription">The Aquacenter is perfect for a rainy day. Instead of swimming 
+        in the ocean, you may enjoy the large swimming pool, the jacuzzi and the sauna (with free tea !). </string>
+    <string name="aquacenterInformations">Complexe sportif du Val Saint-Martin, 44210 Pornic \n
+        Open daily from 8am to 9 pm</string>
+
+    <!-- aventure datas -->
+
+    <string name="aventureName">Pornic Aventure</string>
+    <string name="aventureOpeningDays">Open daily, 8am-9pm</string>
+    <integer name="aventureCategory">0</integer>
+    <drawable name="aventureImage">@drawable/aventure</drawable>
+    <string name="aventureDescription">Pornic Aventure is a treetop-park located in the Val St-Martin,
+        7 minutes drive away from the old harbour. Ziplines, climbing wall, monkey bridges and Tarzan 
+        jump will pleased everyone. The Pornic Aventure situation between trees and lake is a perfect heaven of peace.  </string>
+    <string name="aventureInformations">Chemin des trois croix, 44210 Pornic \n
+        Open daily from 8am to 9 pm</string>
+
+    <!-- valstmartin datas -->
+
+    <string name="valstmartinName">Val Saint Martin</string>
+    <string name="valstmartinOpeningDays">Open daily 24/7</string>
+    <integer name="valstmartinCategory">0</integer>
+    <drawable name="valstmartinImage">@drawable/valstmartin</drawable>
+    <string name="valstmartinDescription">Val St-Martin Lake is a protected place between wild hills. 
+        If you are a runner, a fisher man or a nature-lover  </string>
+    <string name="valstmartinInformations">Le Val Saint-Martin 44210 Pornic \n Open daily and 24 hours a day</string>
+
+    <!-- fraiseraie datas -->
+
+    <string name="fraiseraieName">La Fraiseraie</string>
+    <string name="fraiseraieOpeningDays">Open daily, 8am-11pm </string>
+    <integer name="fraiseraieCategory">1</integer>
+    <drawable name="fraiseraieImage">@drawable/fraiseraie</drawable>
+    <string name="fraiseraieDescription">La Fraiseraie is the oldest place in Pornic to buy delicious ice cream 
+        in front of the fraiseraie and the old harbour. It is the perfect place for a nice break ! </string>
+    <string name="fraiseraieInformations">Pl. du Petit Nice, 44210 Pornic \n Open daily, from 8am to 11pm</string>
+
+    <!-- villanoe datas -->
+
+    <string name="villanoeName">La Villa Noë</string>
+    <string name="villanoeOpeningDays">Open daily, 12pm-11pm </string>
+    <integer name="villanoeCategory">1</integer>
+    <drawable name="villanoeImage">@drawable/villanoe</drawable>
+    <string name="villanoeDescription">La Villa Noë is the best place to eat sea-food in front of the 
+        beach. A large choice of fresh sea-food is available each day. Let’s try it ! </string>
+    <string name="villanoeInformations">Plage de la Noeveillard, 44210 Pornic \n Open daily, from 12am to 11pm</string>
+
+    <!-- casinorestaurant datas -->
+
+    <string name="casinorestaurantName">Casino\'s Restaurant</string>
+    <string name="casinorestaurantOpeningDays">Open daily, 10am-2am </string>
+    <integer name="casinorestaurantCategory">1</integer>
+    <drawable name="casinorestaurantImage">@drawable/casinorestaurant</drawable>
+    <string name="casinorestaurantDescription">The Casino’s restaurant offers a great value menu to enjoy in 
+        front of the old harbour. Most of all, there is often music bands playing at dinner time. A 
+        delight place for both stomach and ears ! </string>
+    <string name="casinorestaurantInformations">50 Quai Leray, 44210 Pornic \n Open daily, from 10am to 2am</string>
+
+    <!-- casahernesto datas -->
+
+    <string name="casahernestoName">La Casa d\'Hernesto</string>
+    <string name="casahernestoOpeningDays">Open daily, 11am-11pm </string>
+    <integer name="casahernestoCategory">1</integer>
+    <drawable name="casahernestoImage">@drawable/casahernesto</drawable>
+    <string name="casahernestoDescription">La Casa d’Hernesto is a little piece of Spain in Pornic’s city 
+        center. Tapas, sangria and Spanish music in front of the sea, a perfect mix for a perfect rest. </string>
+    <string name="casahernestoInformations">Nouveau Port Noëveillard, 44210 Pornic \n Open daily, from 11am to 11pm</string>
+
+    <!-- crescendo datas -->
+
+    <string name="crescendoName">Crescendo Cafeteria</string>
+    <string name="crescendoOpeningDays">Open daily, 11am-11pm </string>
+    <integer name="crescendoCategory">1</integer>
+    <drawable name="crescendoImage">@drawable/crescendo</drawable>
+    <string name="crescendoDescription">The Crescendo Cafétéria in Leclerc Mall is a good place for 
+        families or for having a quick meal after shopping. With the largest choice of meals in 
+        Pornic and the best value, you should try it once ! </string>
+    <string name="crescendoInformations">C/C Leclerc Zone des Terres jarries, 44210 Pornic \n Open daily, from 11am to 11pm</string>
+
+    <!-- beausoleil datas -->
+
+    <string name="beausoleilName">Beau Soleil</string>
+    <string name="beausoleilOpeningDays">wi-fi, TV, mini bar, balcony, port view </string>
+    <integer name="beausoleilCategory">3</integer>
+    <drawable name="beausoleilImage">@drawable/beausoleil</drawable>
+    <string name="beausoleilDescription">In the heart of old harbour, the Hôtel Beau Soleil is a nice
+        and comfortable place. The hotel is situated 8 minutes walk away from the train station and
+        15 minutes walk from the beach. </string>
+    <string name="beausoleilInformations">70 Quai Leray, 44210 Pornic \n Services : wi-fi, TV, mini bar, balcony, port view</string>
+
+
+    <!-- aliance datas -->
+
+    <string name="alianceName">Aliance Pornic Resort</string>
+    <string name="alianceOpeningDays">wi-fi, TV, mini bar, locked-self, Alliance Pornic cosmetics, ocean view</string>
+    <integer name="alianceCategory">3</integer>
+    <drawable name="alianceImage">@drawable/aliance</drawable>
+    <string name="alianceDescription">Aliance Pornic Resort Hôtel Thalasso &amp; Spa is a four stars
+        hotel with a wonderful ocean view. With the spa, the swimming pool and the private beach,
+        it is a heaven of peace.  </string>
+    <string name="alianceInformations">Plage de la Source, 44210 Pornic \n Services : wi-fi, TV, mini bar, locked-self, Alliance Pornic cosmetics, ocean view</string>
+
+    <!-- voletsbleus datas -->
+
+    <string name="voletsbleusName">Les Volets Bleus</string>
+    <string name="voletsbleusOpeningDays">wi-fi, TV, kitchen, dishwasher, washing machine, living-room, BBQ </string>
+    <integer name="voletsbleusCategory">3</integer>
+    <drawable name="voletsbleusImage">@drawable/voletsbleus</drawable>
+    <string name="voletsbleusDescription">Les Volets Bleus is a bed and breakfast located in a house
+        from the 19st century. The B&amp;B is situated 3 minutes walk away from the train station and
+        6 minutes walk away from the old port. </string>
+    <string name="voletsbleusInformations">2 Rue Mondésir, 44210 Pornic \n Services : wi-fi, TV, kitchen, dishwasher, washing machine, living-room, BBQ</string>
+
+    <!-- lilirose datas -->
+
+    <string name="liliroseName">Lili Rose</string>
+    <string name="liliroseOpeningDays">Open Mon-Sat, 10am-7pm </string>
+    <integer name="liliroseCategory">2</integer>
+    <drawable name="liliroseImage">@drawable/lilirose</drawable>
+    <string name="liliroseDescription">Lili Rose Decoration offers a good choice of French home decoration.</string>
+    <string name="liliroseInformations">1 Rue du Traité d\'Amsterdam, 44210 Pornic \n Open on Monday to Saturday, from 10am to 7pm</string>
+
+    <!-- belleilloise datas -->
+
+    <string name="belleilloiseName">Conserverie Belle Illoise</string>
+    <string name="belleilloiseOpeningDays">Open Mon-Sat, 10am-7pm </string>
+    <integer name="belleilloiseCategory">2</integer>
+    <drawable name="belleilloiseImage">@drawable/belleilloise</drawable>
+    <string name="belleilloiseDescription">Conserverie La Belle Illoise is an essential stop point to 
+        bring back home with you some specialities from Pornic like sardines can. </string>
+    <string name="belleilloiseInformations">58 Rue des Sables, 44210 Pornic \n Open on Monday to Saturday, from 10am to 7pm</string>
+
+    <!-- comptoir datas -->
+
+    <string name="comptoirName">Comptoir de la Mer</string>
+    <string name="comptoirOpeningDays">Open Mon-Sat, 10am-7pm </string>
+    <integer name="comptoirCategory">2</integer>
+    <drawable name="comptoirImage">@drawable/comptoir</drawable>
+    <string name="comptoirDescription">Comptoir de la Mer is a shop specialized in ocean items 
+        : decoration for home, clothes for the beach and the city, everything for fishing and for pleasure sailing. </string>
+    <string name="comptoirInformations">4 Rue du Traité de Paris, 44210 Pornic \n Open on Monday to Saturday, from 10am to 7pm</string>
+
 
 </resources>
